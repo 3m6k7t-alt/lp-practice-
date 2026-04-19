@@ -194,12 +194,10 @@ header {
   text-align: left;
 }
 
-/* 偶数行の色を変える（ストライプ模様） */
 .plan-table tbody tr:nth-child(even) {
   background-color: #e0efff;
 }
 
-/* 奇数行の色を変える */
 .plan-table tbody tr:nth-child(odd) {
   background-color: #f9f9f9;
 }
@@ -216,12 +214,11 @@ header {
   gap: 20px;                 
 }
 
-/* アイコン一つ一つの箱 */
 .icon-item {
-  width: 185px;              /* 指定の幅185px */
-  padding: 25px 0;           /* 上下の余白25px */
-  color: #8c8c8c;            /* 指定の色 */
-  overflow: hidden;          /* 指定通り、はみ出た部分を隠す */
+  width: 185px;            
+  padding: 25px 0;      
+  color: #8c8c8c;           
+  overflow: hidden;         
   text-align: center;    
   transition: 0.5;
 }
@@ -230,35 +227,27 @@ header {
   background-color: #fff;
 }
 
-/* Font Awesomeアイコン自体のサイズ */
 .icon-item i {
-  font-size: 40px;           /* 指定のフォントサイズ40px */
-  display: block;            /* paddingを正しく効かせるため */
+  font-size: 40px;          
+  display: block;            
 }
 
 footer {
-  background-color: #cfd8dc; /* 指定の背景色 */
+  background-color: #cfd8dc; 
   text-align: right; 
 }
 
 .copyright {
-  /* 上下の余白25px（左右は0） */
   padding: 25px 0;
-  
-  /* フォントサイズ13px */
   font-size: 13px;
-  
-  /* 字間0.5px */
   letter-spacing: 0.5px;
-  
-  color: #546e7a;            /* 背景色に合わせた濃いめの色（任意） */
+  color: #546e7a;           
   margin: 0;                 
   padding-right: 80px;
 }
 
-/* smallタグのデフォルトスタイル（細字など）を打ち消す場合 */
 .copyright small {
-  font-size: inherit;        /* 親の13pxを引き継ぐ */
+  font-size: inherit;      
   font-style: normal;
 }
 
@@ -286,7 +275,7 @@ footer {
   .news-item {
     width: 100%; 
     align-items: center;
-    margin-bottom: 30px; /* アイテム同士の隙間（適宜調整） */
+    margin-bottom: 30px;
   }
 
   .skills-grid {
