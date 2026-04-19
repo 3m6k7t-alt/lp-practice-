@@ -1,0 +1,374 @@
+@charset "utf-8";
+
+.hamburger-menu{ display: none;}
+
+header {
+  background-color: #fff;
+  padding: 15px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;           
+}
+
+
+.fa-archway {
+  color: #777;
+}
+
+
+.contact-btn {
+  color: #fff;
+  background-color: #6ba7eb;
+  padding: 10px 20px;      
+  text-decoration: none;    
+  border-radius: 5px;      
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  color: #333;
+}
+
+.keyvisual{
+  padding: 400px 0;
+  background-image: url("../images/keyvisual/keyvisual.jpg");
+  background-size:cover;
+  background-position: center;
+  text-align: center;
+  
+}
+
+.keyvisual h1{
+  font-size: 65px;
+  color: #6ba7eb;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.tab-br{
+  display: none;
+}
+
+.keyvisual p{
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.container{
+  font-weight: 700;
+}
+
+.news{
+  width: auto;
+  background-color: #e3f2fd;
+  padding-top: 50px;
+}
+
+.news-flex {
+  display: flex;
+  align-items: flex-start;  
+  justify-content: center; 
+  gap: 100px;                
+}
+
+.news-icon{
+  width: 250px;
+}
+
+.news-icon img{
+  width: 100%;
+  height: auto;
+}
+
+.news-text{
+  flex: 1;                 
+  max-width: 860px;
+  text-align: center;
+}
+
+.news-text h2{
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 10px;     
+  margin-top: 20px;         
+  margin-bottom: 35px;     
+  line-height: 1;
+}
+
+.news-text p{
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 24px;
+  word-break: break-all;
+}
+
+.skills{
+  padding: 50px 0;
+}
+
+.skills h2 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  padding-left: 10px; 
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;       
+  justify-content: center; 
+  gap: 100px;          
+  max-width: 1200px;     
+  margin: 50px auto 0;  
+}
+
+.skills-icon {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  opacity: 0.7;           
+  transition: opacity 0.3s;
+}
+
+.skills-icon img:hover{
+  opacity: 1.0;
+}
+
+.plan{
+  background-color: #d0dfea;
+  padding: 50px 0;
+}
+.plan h2{
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+ 
+}
+
+.plan-table {
+  width: 100%;
+  max-width: 1000px;        
+  margin: 0 auto;
+  border-collapse: collapse; 
+}
+
+
+.plan-table th {
+ padding: 10px;            
+  text-align: center;       
+  background-color: #6ba7eb; 
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;        
+  border-left: 2px solid #fff; 
+}
+
+
+.plan-table td {
+  padding: 15px 10px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  border: 2px solid #fff;
+}
+
+
+.plan-table td:first-child {
+  background-color: #e0efff;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* 偶数行の色を変える（ストライプ模様） */
+.plan-table tbody tr:nth-child(even) {
+  background-color: #e0efff;
+}
+
+/* 奇数行の色を変える */
+.plan-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.sns{
+  background-color: #e3f2fd;
+  padding: 200px 0;
+}
+
+.icon-flex {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  gap: 20px;                 
+}
+
+/* アイコン一つ一つの箱 */
+.icon-item {
+  width: 185px;              /* 指定の幅185px */
+  padding: 25px 0;           /* 上下の余白25px */
+  color: #8c8c8c;            /* 指定の色 */
+  overflow: hidden;          /* 指定通り、はみ出た部分を隠す */
+  text-align: center;    
+  transition: 0.5;
+}
+
+.icon-item:hover{
+  background-color: #fff;
+}
+
+/* Font Awesomeアイコン自体のサイズ */
+.icon-item i {
+  font-size: 40px;           /* 指定のフォントサイズ40px */
+  display: block;            /* paddingを正しく効かせるため */
+}
+
+footer {
+  background-color: #cfd8dc; /* 指定の背景色 */
+  text-align: right; 
+}
+
+.copyright {
+  /* 上下の余白25px（左右は0） */
+  padding: 25px 0;
+  
+  /* フォントサイズ13px */
+  font-size: 13px;
+  
+  /* 字間0.5px */
+  letter-spacing: 0.5px;
+  
+  color: #546e7a;            /* 背景色に合わせた濃いめの色（任意） */
+  margin: 0;                 
+  padding-right: 80px;
+}
+
+/* smallタグのデフォルトスタイル（細字など）を打ち消す場合 */
+.copyright small {
+  font-size: inherit;        /* 親の13pxを引き継ぐ */
+  font-style: normal;
+}
+
+
+@media screen and (max-width: 1199px) {
+
+  
+  .keyvisual {
+    padding: 250px 0; 
+  }
+
+  .tab-br{
+    display: inline;
+  }
+
+  .news {
+    padding: 50px 0; 
+  }
+
+  .news-flex {
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  .news-item {
+    width: 100%; 
+    align-items: center;
+    margin-bottom: 30px; /* アイテム同士の隙間（適宜調整） */
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .skills-icon:nth-child(4n) {
+    margin-top: 80px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+ 
+  .contact-btn {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+  }
+
+ 
+  .hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+  }
+  .hamburger-menu span:nth-child(1) { top: 0; }
+  .hamburger-menu span:nth-child(2) { top: 11px; }
+  .hamburger-menu span:nth-child(3) { bottom: 0; }
+
+
+  .keyvisual {
+    padding: 200px 0;
+  }
+
+  .tab-br {
+    display: none;
+  }
+
+  .keyvisual h1{ 
+    font-size: 40px; 
+  }
+
+  .keyvisual p {
+   font-size: 30px; 
+  }
+
+  .plan-table th {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .plan-table td {
+    font-size: 12px;
+  }
+
+  .social-icons {
+    padding: 50px 0; 
+  }
+
+  .icon-flex {
+    flex-direction: column;
+  }
+
+  .icon-item {
+    width: 100%;   
+    padding: 50px 15px; 
+    box-sizing: border-box; 
+  }
+}
+
+
